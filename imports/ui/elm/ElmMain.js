@@ -5311,10 +5311,10 @@ var $elm$core$Task$perform = F2(
 				A2($elm$core$Task$map, toMessage, task)));
 	});
 var $elm$browser$Browser$element = _Browser_element;
-var $author$project$Main$GotText = function (a) {
+var $author$project$MyChart$GotText = function (a) {
 	return {$: 'GotText', a: a};
 };
-var $author$project$Main$Loading = {$: 'Loading'};
+var $author$project$MyChart$Loading = {$: 'Loading'};
 var $elm$http$Http$BadStatus_ = F2(
 	function (a, b) {
 		return {$: 'BadStatus_', a: a, b: b};
@@ -6094,67 +6094,67 @@ var $elm$http$Http$get = function (r) {
 	return $elm$http$Http$request(
 		{body: $elm$http$Http$emptyBody, expect: r.expect, headers: _List_Nil, method: 'GET', timeout: $elm$core$Maybe$Nothing, tracker: $elm$core$Maybe$Nothing, url: r.url});
 };
-var $author$project$Main$init = function (_v0) {
+var $author$project$MyChart$init = function (_v0) {
 	return _Utils_Tuple2(
-		$author$project$Main$Loading,
+		$author$project$MyChart$Loading,
 		$elm$http$Http$get(
 			{
-				expect: $elm$http$Http$expectString($author$project$Main$GotText),
+				expect: $elm$http$Http$expectString($author$project$MyChart$GotText),
 				url: 'https://elm-lang.org/assets/public-opinion.txt'
 			}));
 };
 var $elm$core$Platform$Sub$batch = _Platform_batch;
 var $elm$core$Platform$Sub$none = $elm$core$Platform$Sub$batch(_List_Nil);
-var $author$project$Main$subscriptions = function (model) {
+var $author$project$MyChart$subscriptions = function (model) {
 	return $elm$core$Platform$Sub$none;
 };
-var $author$project$Main$Failure = {$: 'Failure'};
-var $author$project$Main$Success = function (a) {
+var $author$project$MyChart$Failure = {$: 'Failure'};
+var $author$project$MyChart$Success = function (a) {
 	return {$: 'Success', a: a};
 };
 var $elm$core$Platform$Cmd$batch = _Platform_batch;
 var $elm$core$Platform$Cmd$none = $elm$core$Platform$Cmd$batch(_List_Nil);
-var $author$project$Main$update = F2(
+var $author$project$MyChart$update = F2(
 	function (msg, model) {
 		var result = msg.a;
 		if (result.$ === 'Ok') {
 			var fullText = result.a;
 			return _Utils_Tuple2(
-				$author$project$Main$Success(fullText),
+				$author$project$MyChart$Success(fullText),
 				$elm$core$Platform$Cmd$none);
 		} else {
-			return _Utils_Tuple2($author$project$Main$Failure, $elm$core$Platform$Cmd$none);
+			return _Utils_Tuple2($author$project$MyChart$Failure, $elm$core$Platform$Cmd$none);
 		}
 	});
-var $author$project$Main$Info = F4(
+var $author$project$MyChart$Info = F4(
 	function (age, weight, height, income) {
 		return {age: age, height: height, income: income, weight: weight};
 	});
-var $author$project$Main$alice = _List_fromArray(
+var $author$project$MyChart$alice = _List_fromArray(
 	[
-		A4($author$project$Main$Info, 10, 34, 1.34, 0),
-		A4($author$project$Main$Info, 16, 42, 1.62, 3000),
-		A4($author$project$Main$Info, 25, 75, 1.73, 25000),
-		A4($author$project$Main$Info, 43, 83, 1.75, 40000)
+		A4($author$project$MyChart$Info, 10, 34, 1.34, 0),
+		A4($author$project$MyChart$Info, 16, 42, 1.62, 3000),
+		A4($author$project$MyChart$Info, 25, 75, 1.73, 25000),
+		A4($author$project$MyChart$Info, 43, 83, 1.75, 40000)
 	]);
 var $avh4$elm_color$Color$RgbaSpace = F4(
 	function (a, b, c, d) {
 		return {$: 'RgbaSpace', a: a, b: b, c: c, d: d};
 	});
 var $avh4$elm_color$Color$blue = A4($avh4$elm_color$Color$RgbaSpace, 52 / 255, 101 / 255, 164 / 255, 1.0);
-var $author$project$Main$bobby = _List_fromArray(
+var $author$project$MyChart$bobby = _List_fromArray(
 	[
-		A4($author$project$Main$Info, 10, 38, 1.32, 0),
-		A4($author$project$Main$Info, 17, 69, 1.75, 2000),
-		A4($author$project$Main$Info, 25, 75, 1.87, 32000),
-		A4($author$project$Main$Info, 43, 77, 1.87, 52000)
+		A4($author$project$MyChart$Info, 10, 38, 1.32, 0),
+		A4($author$project$MyChart$Info, 17, 69, 1.75, 2000),
+		A4($author$project$MyChart$Info, 25, 75, 1.87, 32000),
+		A4($author$project$MyChart$Info, 43, 77, 1.87, 52000)
 	]);
-var $author$project$Main$chuck = _List_fromArray(
+var $author$project$MyChart$chuck = _List_fromArray(
 	[
-		A4($author$project$Main$Info, 10, 42, 1.35, 0),
-		A4($author$project$Main$Info, 15, 72, 1.72, 1800),
-		A4($author$project$Main$Info, 25, 89, 1.83, 85000),
-		A4($author$project$Main$Info, 43, 95, 1.84, 120000)
+		A4($author$project$MyChart$Info, 10, 42, 1.35, 0),
+		A4($author$project$MyChart$Info, 15, 72, 1.72, 1800),
+		A4($author$project$MyChart$Info, 25, 89, 1.83, 85000),
+		A4($author$project$MyChart$Info, 43, 95, 1.84, 120000)
 	]);
 var $terezka$line_charts$Internal$Dots$Circle = {$: 'Circle'};
 var $terezka$line_charts$LineChart$Dots$circle = $terezka$line_charts$Internal$Dots$Circle;
@@ -9933,7 +9933,7 @@ var $terezka$line_charts$LineChart$view = F2(
 		return $terezka$line_charts$LineChart$viewCustom(
 			A2($terezka$line_charts$LineChart$defaultConfig, toX, toY));
 	});
-var $author$project$Main$chart = A3(
+var $author$project$MyChart$chart = A3(
 	$terezka$line_charts$LineChart$view,
 	function ($) {
 		return $.age;
@@ -9943,9 +9943,9 @@ var $author$project$Main$chart = A3(
 	},
 	_List_fromArray(
 		[
-			A4($terezka$line_charts$LineChart$line, $avh4$elm_color$Color$red, $terezka$line_charts$LineChart$Dots$diamond, 'Level', $author$project$Main$alice),
-			A4($terezka$line_charts$LineChart$line, $avh4$elm_color$Color$blue, $terezka$line_charts$LineChart$Dots$circle, 'Temp1', $author$project$Main$bobby),
-			A4($terezka$line_charts$LineChart$line, $avh4$elm_color$Color$green, $terezka$line_charts$LineChart$Dots$plus, 'Temp2', $author$project$Main$chuck)
+			A4($terezka$line_charts$LineChart$line, $avh4$elm_color$Color$red, $terezka$line_charts$LineChart$Dots$diamond, 'Level', $author$project$MyChart$alice),
+			A4($terezka$line_charts$LineChart$line, $avh4$elm_color$Color$blue, $terezka$line_charts$LineChart$Dots$circle, 'Temp1', $author$project$MyChart$bobby),
+			A4($terezka$line_charts$LineChart$line, $avh4$elm_color$Color$green, $terezka$line_charts$LineChart$Dots$plus, 'Temp2', $author$project$MyChart$chuck)
 		]));
 var $elm$json$Json$Encode$string = _Json_wrap;
 var $elm$html$Html$Attributes$stringProperty = F2(
@@ -9959,7 +9959,7 @@ var $elm$html$Html$Attributes$class = $elm$html$Html$Attributes$stringProperty('
 var $elm$html$Html$h1 = _VirtualDom_node('h1');
 var $elm$html$Html$pre = _VirtualDom_node('pre');
 var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
-var $author$project$Main$view = function (model) {
+var $author$project$MyChart$view = function (model) {
 	return A2(
 		$elm$html$Html$div,
 		_List_Nil,
@@ -9996,10 +9996,96 @@ var $author$project$Main$view = function (model) {
 						$elm$html$Html$Attributes$class('container')
 					]),
 				_List_fromArray(
-					[$author$project$Main$chart]))
+					[$author$project$MyChart$chart]))
 			]));
 };
-var $author$project$Main$main = $elm$browser$Browser$element(
-	{init: $author$project$Main$init, subscriptions: $author$project$Main$subscriptions, update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+var $author$project$MyChart$main = $elm$browser$Browser$element(
+	{init: $author$project$MyChart$init, subscriptions: $author$project$MyChart$subscriptions, update: $author$project$MyChart$update, view: $author$project$MyChart$view});
+var $author$project$Button$init = 0;
+var $elm$browser$Browser$sandbox = function (impl) {
+	return _Browser_element(
+		{
+			init: function (_v0) {
+				return _Utils_Tuple2(impl.init, $elm$core$Platform$Cmd$none);
+			},
+			subscriptions: function (_v1) {
+				return $elm$core$Platform$Sub$none;
+			},
+			update: F2(
+				function (msg, model) {
+					return _Utils_Tuple2(
+						A2(impl.update, msg, model),
+						$elm$core$Platform$Cmd$none);
+				}),
+			view: impl.view
+		});
+};
+var $author$project$Button$update = F2(
+	function (msg, model) {
+		if (msg.$ === 'Increment') {
+			return model + 1;
+		} else {
+			return model - 1;
+		}
+	});
+var $author$project$Button$Decrement = {$: 'Decrement'};
+var $author$project$Button$Increment = {$: 'Increment'};
+var $elm$html$Html$button = _VirtualDom_node('button');
+var $elm$virtual_dom$VirtualDom$Normal = function (a) {
+	return {$: 'Normal', a: a};
+};
+var $elm$virtual_dom$VirtualDom$on = _VirtualDom_on;
+var $elm$html$Html$Events$on = F2(
+	function (event, decoder) {
+		return A2(
+			$elm$virtual_dom$VirtualDom$on,
+			event,
+			$elm$virtual_dom$VirtualDom$Normal(decoder));
+	});
+var $elm$html$Html$Events$onClick = function (msg) {
+	return A2(
+		$elm$html$Html$Events$on,
+		'click',
+		$elm$json$Json$Decode$succeed(msg));
+};
+var $author$project$Button$view = function (model) {
+	return A2(
+		$elm$html$Html$div,
+		_List_Nil,
+		_List_fromArray(
+			[
+				A2(
+				$elm$html$Html$button,
+				_List_fromArray(
+					[
+						$elm$html$Html$Events$onClick($author$project$Button$Decrement)
+					]),
+				_List_fromArray(
+					[
+						$elm$html$Html$text('-')
+					])),
+				A2(
+				$elm$html$Html$div,
+				_List_Nil,
+				_List_fromArray(
+					[
+						$elm$html$Html$text(
+						$elm$core$String$fromInt(model))
+					])),
+				A2(
+				$elm$html$Html$button,
+				_List_fromArray(
+					[
+						$elm$html$Html$Events$onClick($author$project$Button$Increment)
+					]),
+				_List_fromArray(
+					[
+						$elm$html$Html$text('+')
+					]))
+			]));
+};
+var $author$project$Button$main = $elm$browser$Browser$sandbox(
+	{init: $author$project$Button$init, update: $author$project$Button$update, view: $author$project$Button$view});
+_Platform_export({'Button':{'init':$author$project$Button$main(
+	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)},'MyChart':{'init':$author$project$MyChart$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));

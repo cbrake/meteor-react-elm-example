@@ -5,7 +5,7 @@
 --
 
 
-module Main exposing (Model(..), Msg(..), init, main, subscriptions, update, view)
+module MyChart exposing (Model(..), Msg(..), init, main, subscriptions, update, view)
 
 import Browser
 import Color
